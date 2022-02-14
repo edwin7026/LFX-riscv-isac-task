@@ -25,4 +25,4 @@ Executing the python file cross_comb_gen.py out of the box would produce a combi
 The test report in accordance with task 2 is given.
 
 *Issues*
-- There are 24 failed tests in the report. This may be due to editing the spike and cSail yaml files for making it compatible for RISC-V64I
+- There are 24 failed tests in the report. This may be due to editing the spike and cSail yaml files for making it compatible for RISC-V64I from RISC-V32
