@@ -1,10 +1,10 @@
 # **LFX-riscv-isac-task**
 ## **TASK 1:** Coverpoint generator for a cross combination coverpoint in riscv-isac
 
-Executing the python file cross_comb_gen.py out of the box would produce a combination of all possible coverpointsfor add and mul instructions with N instructions between them. The combinations of coverpoints include both consuming and non-consuming scenarios.
+Executing the python file cross_comb_gen.py out of the box would produce a combination of all possible coverpoints for add and mul instructions with N instructions between them. The combinations of coverpoints include both consuming and non-consuming scenarios.
 
 *Features*
-- gen_cross_cov() method in cross_comb_gen.py generates all possible coverpoints for a given set of op-codes and hazard for both consuming and non-consuming scenarios. The following are its arguments.
+- gen_cross_cov() method in cross_comb_gen.py generates all possible coverpoints for a given set of op-codes and hazards for both consuming and non-consuming scenarios. The following are its arguments.
     - Start and end op-codes tuple
     - Number of instructions between  start and end op-codes
     - Type of hazard: RAW, WAW, WAR. (RAR is not considered to be a data hazard)
