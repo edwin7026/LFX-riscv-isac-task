@@ -58,7 +58,7 @@ def gen_cross_cov(op_pair, N, hazard, dontcare = False):
     cons_w = 'rs1==a or rs2==a or rd==a : '                                                 # For read/write after write
     cons_r = 'rd==a or rd==b : '                                                            # For read/write after read
 
-    if dontcare:
+    if dontcare:                                                                           # Handling dontcare condition
         if hazard == 0:
             cov = opcode_lst + assgn_lst_write + ' :: [ ? : ' + ''.join(' : ').join('?' * (N)) + ' rs1==a or rs2==a ]'
         elif hazard == 1:
@@ -68,7 +68,7 @@ def gen_cross_cov(op_pair, N, hazard, dontcare = False):
         else:
             raise ValueError('Hazard must be an integer of value 0 to 2')
         return cov
-    else:
+    else:                                                                                   # Generate cross product mapping from 2 to N dimensions
         if hazard == 0 or hazard == 1:
             cond_combination = list(product([cons_w, ncons_w], repeat=N))
         elif hazard == 2:
@@ -76,7 +76,7 @@ def gen_cross_cov(op_pair, N, hazard, dontcare = False):
         else:
             raise ValueError('Hazard must be an integer of value 0 to 2')
 
-    for perm in cond_combination:
+    for perm in cond_combination:                                                           # Generate coverpoint strings and appending to dictinary
         if hazard == 0:                                 #RAW
             cov_lst[0].insert(0, opcode_lst + assgn_lst_write + ' :: [ ? : ' + ''.join(perm) + 'rs1==a or rs2==a ]')
         elif hazard == 1:                               #WAW
