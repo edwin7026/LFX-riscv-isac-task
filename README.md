@@ -17,6 +17,6 @@ Executing the python file cross_comb_gen.py out of the box would produce a combi
 - Considering the coverpoint: [ add : ? : ? : mul ] :: [a=rd : ? : ? : ?] :: [? : rd!=a and rs1!=a and rs2!=a : rs1==a or rs2==a or rd==a : rd==a]
     - This coverpoint is used to check for WAW data hazard 
 - Possible Solutions:
-    - A classic and easy way to get rid of data hazards is by appending nop instruction between hazardous instructions in the pipeline
+    - A classic and easy way to get rid of data hazards is by appending nop instruction between hazardous instructions in the pipeline. But this is not desired as it contradicts the very need for pipelining
     - Hardware level optimization of pipelining should be implemented. e.g. data forwarding
     - riscv-isac can find and initiate a instruction reordering scheme to be safe from data hazards
