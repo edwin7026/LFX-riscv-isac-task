@@ -1,4 +1,4 @@
-# **LFX-riscv-isac-task**
+# **LFX RISCV-CTG and RISCV-ISAC Mentorship Program Additional Tasks**
 ## **TASK 1:** Coverpoint generator for a cross combination coverpoint in riscv-isac
 
 Executing the python file cross_comb_gen.py out of the box would produce a combination of all possible coverpoints for add and mul instructions with N instructions between them. The combinations of coverpoints include both consuming and non-consuming scenarios.
@@ -22,7 +22,7 @@ Executing the python file cross_comb_gen.py out of the box would produce a combi
     - riscv-isac can find and initiate a instruction reordering scheme to be safe from data hazards. This can involve pushing independent instructions from the code into the pipeline between hazardous instructions
 
 ## **TASK 2:** Generate test report using riscof framework for RISCV-64I 
-The test report in accordance with task 2 is given.
+The test report in accordance with task 2 is given: task2.html
 
 *Issues*
-- There are 24 failed tests in the report. This may be due to editing the spike and cSail yaml files for making it compatible for RISC-V64I from RISC-V32
+- There are 24 failed tests in the report. This may be due to editing the spike and cSail yaml files for making it compatible for RISC-V64I from RISC-V32.
