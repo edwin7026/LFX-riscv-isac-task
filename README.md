@@ -20,3 +20,8 @@ Executing the python file cross_comb_gen.py out of the box would produce a combi
     - A classic and easy way to get rid of data hazards is by appending nop instruction between hazardous instructions in the pipeline. But this is not desired as it contradicts the very need for pipelining.
     - Hardware level optimization of pipelining should be implemented. e.g. data forwarding.
     - riscv-isac can find and initiate a instruction reordering scheme to be safe from data hazards. This can involve pushing independent instructions from the code into the pipeline between hazardous instructions
+
+## **TASK 2:** Generate test report using riscof framework for RISCV-64I 
+The test report in accordance with task 2 is given
+*Issues*
+- There are 24 failed tests in the report. This may be due to editing the spike and cSail yaml files for making it compatible for RISC-V64I
