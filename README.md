@@ -22,7 +22,7 @@ Executing the python file cross_comb_gen.py out of the box would produce a combi
     - riscv-isac can find and initiate a instruction reordering scheme to be safe from data hazards. This can involve pushing independent instructions from the code into the pipeline between hazardous instructions
 
 ## **TASK 2:** Generate test report using riscof framework for RISCV-64I 
-The test report in accordance with task 2 is given: task2.html
 
 *Issues*
-- There are 24 failed tests in the report. This may be due to editing the spike and cSail yaml files for making it compatible for RISC-V64I from RISC-V32.
+- There are 24 failed tests in the report. This was the first run. This may be due to improper test files in for riscv-arch-test. The test report in accordance with task 2 is given: task2.html
+- A second run of the process was done and the test files were manually generated using RISCV-CTG. The report generated seems to show same ratio of failures. This file is named as task2-ver2.html
