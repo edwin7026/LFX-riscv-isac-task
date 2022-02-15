@@ -91,7 +91,7 @@ if __name__ == '__main__':
     end_ops = ('mul')
     op_pair_ = (start_ops, end_ops)
     N = 2
-    dc = True
+    dc = False
     haz_dict = {0 : 'RAW', 1 : 'WAW', 2 : 'WAR'}
     if dc:
         for i in range(3):
