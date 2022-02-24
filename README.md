@@ -26,3 +26,4 @@ Executing the python file cross_comb_gen.py out of the box would produce a combi
 *Issues*
 - There are 24 failed tests in the report. This was the first run. This may be due to improper test files in for riscv-arch-test. The test report in accordance with task 2 is given: task2.html
 - A second run of the process was done and the test files were manually generated using RISCV-CTG. The report generated seems to show same ratio of failures. This file is named as task2-ver2.html
+- report.html is updated with all the tests passed
